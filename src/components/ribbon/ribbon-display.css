@@ -1,0 +1,26 @@
+/* RibbonBar.css */
+
+.background {
+    flex-direction: column;
+    width: 1920px;
+}
+
+.ribbon-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #ededed;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.logo {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.button-group {
+    display: flex;
+    margin-right: 16px;
+}

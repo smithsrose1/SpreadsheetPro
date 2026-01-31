@@ -1,0 +1,40 @@
+.modal-dialog {
+    padding: 8px;
+    background-color: rgb(228, 228, 228);
+    position: fixed;
+    overflow-y: scroll;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: -266px;
+    height: vh;
+    width: 250px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal-dialog.show {
+    right: 0px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition:
+        opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal-body {
+    display: inline-block;
+    width: 215px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 90%;
+    word-wrap: break-word;
+}

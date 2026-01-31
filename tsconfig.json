@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": "src",
+        "moduleResolution": "node",
+        "paths": {
+            "react-chartjs-2": ["node_modules/react-chartjs-2"]
+        },
+        "esModuleInterop": true,
+        "target": "ES2015"
+    },
+    "include": [
+        "src"
+    ]
+}

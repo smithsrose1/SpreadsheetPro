@@ -1,0 +1,82 @@
+/* Chart container style */
+.chart-container {
+    width: 100%;
+    height: 600px; /* Fixed height */
+    max-width: 600px; /* Restrict maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Relative positioning for internal elements */
+    background-color: #f9f9f9; /* Optional: background color */
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for visual appeal */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Space inside the container for visual balance */
+}
+
+/* Title styling */
+.chart-title {
+    font-size: 18px; /* Adjust title font size */
+    margin-bottom: auto; /* Push the title to the top */
+    text-align: center; /* Center the title text */
+    padding: 10px 0; /* Space around the title */
+    font-weight: bold; /* Optional: make the title bold */
+    color: #333; /* Optional: dark gray color for better readability */
+}
+
+/* Chart area styling */
+.chart-area {
+    flex-grow: 1; /* Use remaining vertical space */
+    width: 80%; /* Set chart width relative to the container */
+    position: relative; /* Maintain chart position */
+}
+
+/* Delete button styling */
+.delete-chart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6b6b; /* Red background for the delete button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; /* Circular button */
+    transition: background-color 0.3s;
+}
+
+.delete-chart-btn:hover {
+    background-color: #d43f3f; /* Darker red when hovering */
+}
+
+/* X Axis Label Styling */
+.chart-area canvas {
+    position: relative;
+    margin-top: 20px;
+}
+
+.chart-area .chartjs-render-monitor {
+    font-family: Arial, sans-serif; /* Font family for labels */
+}
+
+/* Styling for X Axis */
+.chart-area .chartjs-tooltip {
+    display: none; /* Optional: Hide tooltips */
+}
+
+/* Y Axis Label Styling */
+.chart-area .chartjs-render-monitor .chartjs-axis-labels {
+    font-size: 14px; /* Font size for Y axis labels */
+    color: #333; /* Y axis label color */
+    font-weight: normal; /* Normal font weight */
+    padding: 5px;
+    margin-left: 5px; /* Space between chart and axis label */
+}
+
+/* Optional: Adjust for responsiveness */
+@media screen and (max-width: 768px) {
+    .chart-container {
+        height: 300px; /* Reduce height on smaller screens */
+    }
+}
